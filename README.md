@@ -1,6 +1,3 @@
-# This extension is deprecated
-In CiviCRM 5.23+ and CiviRules 5.12+, support for the "Soft Credit is added/changed/deleted" tokens exist.  There's no longer a need for a CiviRule action on the contribution; you can use the existing "Send Email" action provided by the Email API extension with a soft credit trigger.
-
 ## sendtosoftcreditee
 
 This extension adds a new CiviRules action, "Send E-mail to Soft Creditee".

@@ -1,6 +1,6 @@
 <?php
 /**
- * @author Jaap Jansma <jaap.jansma@civicoop.org>
+ * @author Jon Goldberg <jon@megaphonetech.com>
  * @license AGPL-3.0
  */
 
