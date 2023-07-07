@@ -32,6 +32,9 @@ class CRM_Sendtosoftcreditee_CivirulesAction extends CRM_Civirules_Action {
       }
       $extra_data = (array) $triggerData;
       $params['extra_data'] = $extra_data["\0CRM_Civirules_TriggerData_TriggerData\0entity_data"];
+      $params['Contribution_id'] = $contributionId;
+      // This is because I hope one day we deal with this capitalization nonsense.
+      $params['contribution_id'] = $contributionId;
       //execute the action
       civicrm_api3('Email', 'send', $params);
     }
@@ -51,7 +54,7 @@ class CRM_Sendtosoftcreditee_CivirulesAction extends CRM_Civirules_Action {
     return $contacts;
   }
 
-    /**
+  /**
    * Returns a redirect url to extra data input from the user after adding a action
    *
    * Return false if you do not need extra data input
