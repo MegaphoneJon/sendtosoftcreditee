@@ -7,7 +7,9 @@ The extension is licensed under [AGPL-3.0](LICENSE.txt).
 ## Requirements
 
 * PHP v7.0+
-* CiviCRM 5.16+
+* CiviCRM 5.38+
+* CiviRules
+* Email API (version 2.4 or higher)
 
 ## Installation (Web UI)
 
