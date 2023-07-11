@@ -14,7 +14,7 @@ class CRM_Sendtosoftcreditee_CivirulesAction extends CRM_Civirules_Action {
    */
   public function processAction(CRM_Civirules_TriggerData_TriggerData $triggerData) {
     $actionParams = $this->getActionParameters();
-    $contributionId = $triggerData->getOriginalData()['contribution_id'] ?? NULL;
+    $contributionId = $triggerData->getEntityId() ?? NULL;
     if (!$contributionId) {
       return;
     }
